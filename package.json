@@ -4,7 +4,9 @@
   "description": "One-way data-binding for JSON files",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -27,6 +29,8 @@
   },
   "dependencies": {
     "observed": "^1.1.0",
-    "steno": "^0.3.2"
-  }
+    "steno": "^0.3.2",
+    "snyk": "^1.179.1"
+  },
+  "snyk": true
 }
